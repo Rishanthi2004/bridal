@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif), "Playfair Display", Georgia, serif;
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-plum-950: #260a14;
+  --color-plum-900: #3f1021;
+  --color-plum-800: #54162c;
+  --color-plum-700: #6d1c3a;
+  
+  --color-rose-600: #b83d63;
+  --color-rose-500: #d45b7d;
+  --color-rose-400: #e27396;
+  --color-rose-100: #fae1e8;
+  --color-rose-50: #fdf2f5;
+
+  --color-gold-600: #a77c30;
+  --color-gold-500: #c59b4c;
+  --color-gold-400: #dfb76c;
+  --color-gold-100: #f7eedb;
+  --color-gold-50: #fcf9f2;
+
+  --color-ivory-50: #faf7f5;
+  --color-ivory-100: #f5efe9;
+  --color-ivory-200: #ebdcd2;
+}
+
+body {
+  background-color: #FAF7F5;
+  color: #2C1D21;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom animations & transitions */
+.transition-luxury {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hide scrollbar for category strip */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
